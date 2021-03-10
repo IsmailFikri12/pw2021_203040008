@@ -46,6 +46,69 @@ $anime = [
         "genre" => "Comedy, Romance, Shounen",
         "gambar" => "to.jpg",
         "studio" => "Seven Arcs"
+    ],
+    [
+        "judul" => "Shingeki no Kyoujin Season 4", 
+        "produser" => "Pony Canyon, Techno Sound",
+        "status" => "On Going",
+        "total episode" => "Unknown",
+        "genre" => "Action, Drama, Fantasy, Millitary",
+        "gambar" => "shi.jpg",
+        "studio" => "MAPPA"
+    ],
+    [
+        "judul" => "Yakusoku no Neverland Season 2", 
+        "produser" => "Aniplex, Shueisha",
+        "status" => "On Going",
+        "total episode" => "Unknown",
+        "genre" => "Mystery, Psychological, Sci-Fi, Shounen",
+        "gambar" => "ya.jpg",
+        "studio" => "CloverWorks"
+    ],
+    [
+        "judul" => "Dr. Stone Season 2", 
+        "produser" => "Shueisha",
+        "status" => "On Going",
+        "total episode" => "Unknown",
+        "genre" => "Adventure, Sci-Fi, Shounen",
+        "gambar" => "sto.jpg",
+        "studio" => "TMS Entertainment"
+    ],
+    [
+        "judul" => "Horimiya", 
+        "produser" => "Aniplex",
+        "status" => "On Going",
+        "total episode" => "12 Episode",
+        "genre" => "Comedy, Romance, School, Shounen",
+        "gambar" => "hori.jpg",
+        "studio" => "CloverWorks"
+    ],
+    [
+        "judul" => "Mushoku Tensei: Isekai Ittara Honki Dasu", 
+        "produser" => "Egg Firm",
+        "status" => "On Going",
+        "total episode" => "Unknown",
+        "genre" => "Drama, Fantasy, Magic",
+        "gambar" => "mus.jpg",
+        "studio" => "Winter 2021"
+    ],
+    [
+        "judul" => "Black Clover", 
+        "produser" => "TV Tokyo, Avex Pictures, Shueisha",
+        "status" => "On Going",
+        "total episode" => "-",
+        "genre" => "Action, Comedy, Fantasy, Magic, Shounen",
+        "gambar" => "bla.jpg",
+        "studio" => "Studio Pierrot"
+    ],
+    [
+        "judul" => "Re:Zero Kara Hajimeru Isekai Seikatsu Season 2", 
+        "produser" => "AT-X, Memory-Tech",
+        "status" => "On Going",
+        "total episode" => "-",
+        "genre" => "Drama, Fantasy, Psychological, Thriller",
+        "gambar" => "re.jpg",
+        "studio" => "White Fox"
     ]
 ];
 
