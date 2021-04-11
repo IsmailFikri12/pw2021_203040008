@@ -1,0 +1,20 @@
+section {
+    min-height: 420px;
+}
+
+h1 {
+    text-align: center;
+}
+
+span {
+    ont-family: arial;
+    border: 1px solid black;
+    padding: 5px;
+    background-color: blue;
+    font-weight: bold;
+}
+
+img {
+    width: 500px;
+    height: 420px;
+}
