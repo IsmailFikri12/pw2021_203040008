@@ -27,7 +27,7 @@ $buku = query("SELECT * FROM buku");
     }
 
     span {
-        font-family: arial;
+        ont-family: arial;
         border: 1px solid black;
         padding: 5px;
         background-color: blue;
@@ -42,7 +42,7 @@ $buku = query("SELECT * FROM buku");
     <h1>Online Shop Happy</h1>
     
     <div class="container">
-        <div class="table-primary"></div>
+        <div>
             <?php foreach ($buku as $bk) :?>
                 <p class="nama">
                     <a href="php/detail.php?id=<?= $bk['id'] ?>">
@@ -51,9 +51,9 @@ $buku = query("SELECT * FROM buku");
                 </p>
             <?php endforeach; ?>
         </div>
+
+        <button class="tombol-admin"><a href="php/admin.php">Halaman Admin</a></button>
     </div>
 
-        </table>
-    </div>
 </body>
 </html>

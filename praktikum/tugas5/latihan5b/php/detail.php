@@ -4,10 +4,17 @@ NRP : 203040008
 Praktikum : Rabu pukul 09:00 - 10:00 WIB
 -->
 
+<?php
+    if (!isset($_GET['id'])) {
+        header("location: ../index.php");
+        exit;
+    }
 
-<?php 
-require 'php/functions.php';
-$buku = query("SELECT * FROM buku");
+    require 'functions.php';
+
+    $id = $_GET['id'];
+
+    $buku = query("SELECT * FROM buku WHERE id = $id")[0];
 ?>
 
 <!DOCTYPE html>
@@ -42,18 +49,18 @@ $buku = query("SELECT * FROM buku");
     <h1>Online Shop Happy</h1>
     
     <div class="container">
-        <div class="table-primary"></div>
-            <?php foreach ($buku as $bk) :?>
-                <p class="nama">
-                    <a href="php/detail.php?id=<?= $bk['id'] ?>">
-                        <?= $bk["penulis"]?>
-                    </a>
-                </p>
-            <?php endforeach; ?>
-        </div>
-    </div>
+       <div class="gambar">
+            <img src="../assets/img/<?= $buku["gambar"]; ?>" alt="">
+       </div>
+       <div class="keterangan">
+           <p class="table-primary"><?= $buku["judul"]; ?></p>
+           <p class="table-primary"><?= $buku["penulis"]; ?></p>
+           <p class="table-primary"><?= $buku["harga"]; ?></p>
+           <p class="table-primary"><?= $buku["categori"]; ?></p>
+           <p class="table-primary"><?= $buku["stok"]; ?></p>
+       </div>
 
-        </table>
+       <button class="tombol-kembali"><a href="../index.php">Kembali</a></button>
     </div>
 </body>
 </html>
