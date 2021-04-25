@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 21 Apr 2021 pada 21.53
+-- Waktu pembuatan: 25 Apr 2021 pada 17.23
 -- Versi server: 10.1.38-MariaDB
 -- Versi PHP: 7.3.2
 
@@ -25,40 +25,6 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `buku`
---
-
-CREATE TABLE `buku` (
-  `id` int(11) NOT NULL,
-  `judul` varchar(100) NOT NULL,
-  `penulis` varchar(100) NOT NULL,
-  `harga` varchar(100) NOT NULL,
-  `gambar` varchar(100) NOT NULL,
-  `categori` varchar(100) NOT NULL,
-  `stok` varchar(100) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data untuk tabel `buku`
---
-
-INSERT INTO `buku` (`id`, `judul`, `penulis`, `harga`, `gambar`, `categori`, `stok`) VALUES
-(1, 'Konspirasi Alam Semesta', 'Fiersa Besari', 'Rp. 63.000,-', 'fiersa.jpg', 'Romance', 'Terbatas'),
-(2, 'Tidak Ada New York Hari Ini', 'Aan Mansyur', 'Rp. 91.000,-', 'aan.jpg', 'Romance', 'Terbatas'),
-(3, 'Angan Senja Senyum Pagi', 'Fahd Pahdephie', 'Rp. 89.000,-', 'fahd.jpg', 'Romance', 'Banyak'),
-(4, 'Critical Eleven', 'Ika Natassa', 'Rp. 79.000,-', 'ikka.jpg', 'Romance', 'Terbatas'),
-(5, 'Bad Romance', 'Equita Millianda', 'Rp. 82.000,-', 'equita.jpg', 'Romance', 'Banyak'),
-(6, 'Sebuah Usaha Melupakan', 'Boy Chandra', 'Rp. 54.000,-', 'boy.jpg', 'Romance', 'Banyak'),
-(7, 'Rindu', 'Tere Liye', 'Rp. 70.000,-', 'tere.jpg', 'Romance', 'Terbatas'),
-(8, 'Frined Zone', 'Vanesa Marcella', 'Rp. 57.000,-', 'friend.jpg', 'Romance', 'Banyak'),
-(9, 'The Book of Forbidden Feelings', 'Lala Bohang', 'Rp. 150.000,-', 'lala.jpg', 'Romance', 'Terbatas'),
-(10, 'Untuk Matamu', 'Kharisma Pangeran Lanang', 'Rp. 137.000,-', 'khris.jpg', 'Romance', 'Banyak'),
-(25, 'Dilan 1990', 'Pidi Baiq', 'Rp. 59.000,-', 'dilan.jpg', 'Romance', 'Terbatas'),
-(27, 'Milea', 'Pidi Baiq ', 'Rp. 79.000,-', 'milea.jpg', 'Romance', 'Banyak');
-
--- --------------------------------------------------------
-
---
 -- Struktur dari tabel `user`
 --
 
@@ -73,17 +39,12 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id`, `username`, `password`) VALUES
-(0, 'ismail', '$2y$10$kgOJuAK6pJEdRPQzji6Ta.0XMl8y6fOwtn56/s9ewwp3Ff2KX.SVe');
+(1, 'ismailfikri', '$2y$10$qNH6JNPPUzDlnG7VWYsmW.oRQr/fYQQ99oZLOzgV7gPWqN4SpC3bC'),
+(2, 'ismail', '$2y$10$AB.Hf7.ls7lWVVz8ES/QneLeZLhQiQmc/B4zJQw6LO96rVHBHIlrO');
 
 --
 -- Indexes for dumped tables
 --
-
---
--- Indeks untuk tabel `buku`
---
-ALTER TABLE `buku`
-  ADD PRIMARY KEY (`id`);
 
 --
 -- Indeks untuk tabel `user`
@@ -96,10 +57,10 @@ ALTER TABLE `user`
 --
 
 --
--- AUTO_INCREMENT untuk tabel `buku`
+-- AUTO_INCREMENT untuk tabel `user`
 --
-ALTER TABLE `buku`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
+ALTER TABLE `user`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
