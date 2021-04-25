@@ -13,7 +13,7 @@ if (isset ($_SESSION['username'])) {
     exit;
 }
 
-if (isset($_COOKIE['username']) && iseet($_COOKIE['hash'])) {
+if (isset($_COOKIE['username']) && isset($_COOKIE['hash'])) {
     $username = $_COOKIE['username'];
     $hash = $_COOKIE['hash'];
 
