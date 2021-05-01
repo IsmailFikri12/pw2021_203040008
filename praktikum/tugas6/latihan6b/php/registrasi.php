@@ -9,18 +9,17 @@ Praktikum : Rabu pukul 09:00 - 10:00 WIB
 require 'functions.php';
 
 if (isset($_POST["register"])) {
-
     if (registrasi($_POST) > 0) {
-        echo "<script>
+      echo "<script>
                 alert('Registrasi Berhasil');
                 document.location.href = 'login.php';
-            </script>";
+          </script>";
     } else {
-        echo "<script>
+      echo "<script>
                 alert('Registrasi Gagal');
-            </script>";
+          </script>";
     }
-}
+  }
 
 ?>
 
@@ -29,48 +28,33 @@ if (isset($_POST["register"])) {
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <link rel="stylesheet" href="../pw2021_203040008/latihan4b/css/style.css">
-    <style>
-    section {
-        min-height: 420px;
-    }
-
-    h1 {
-        text-align: center;
-    }
-
-    span {
-        font-family: arial;
-        border: 1px solid black;
-        padding: 5px;
-        background-color: blue;
-        font-weight: bold;
-    }
-    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 
     <title>My Shop</title>
 </head>
 <body>
         
-    <h1>Online Shop Happy</h1>
-    
-    <form action="" method="post">
-        <table>
-            <tr>
-                <td><label for="username">Username</label></td>
-                <td>:</td>
-                <td><input type="text" name="username"></td>
-            </tr>
-            <tr>
-                <td><label for="password">Password</label></td>
-                <td>:</td>
-                <td><input type="password" name="password"></td>
-            </tr>
-        </table>
-
-        <button type="submit" name="register">REGISTER</button>
-    </form>
-
+<form action="" method="POST" style="margin-left: 25px;">
+<h1 style="color: red; text-align: center;">Registrasi</h1>
+  <table style="margin-left: 50px;">
+    <tr>
+        <p style="color: blue; font-size: 20px;">Buat Username dan Passsword Baru</p>
+    </tr>
+    <tr>
+      <td><label for="username"><span class="badge bg-warning">Username</span></label></td>
+      <td>:</td>
+      <td><input type="text" name="username"></td>
+    </tr>
+    <tr>
+      <td><label for="password"><span class="badge bg-warning">Password</span></label></td>
+      <td>:</td>
+      <td><input type="password" name="password"></td>
+    </tr>
+  </table>
+  <button type="submit" name="register" style="margin-top: 15px;margin-left: 55px;" class="btn btn-primary">REGISTER</button>
+  <div class="login">
+    <p style="font-weight: bold;margin-top:15px;">Sudah punya akun ? Login <a href="login.php">Disini</a></p>
+  </div>
+</form>
 </body>
 </html>
