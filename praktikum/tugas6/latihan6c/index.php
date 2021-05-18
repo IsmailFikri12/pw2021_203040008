@@ -34,7 +34,7 @@ $buku = query("SELECT * FROM buku");
             <p class="nama">
                 <table class="table">
                     <tr>
-                    <td class="table-info"><a style="text-decoration:none" href="php/detail.php?id=<?= $bk['id'] ?>"><span><?= $bk["penulis"]; ?></span></a></td>
+                        <td class="table-info"><a style="text-decoration:none" href="php/detail.php?id=<?= $bk['id'] ?>"><span><?= $bk["penulis"]; ?></span></a></td>
                     </tr>
                 </table>
             </p>
