@@ -1,0 +1,14 @@
+.slider h3,
+.slider h5,
+.clients h3 {
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (min-width: 450px) {
+    .row img {
+        display: flex;
+        width: 100%;
+        height: auto;
+        margin-bottom: -30%;
+    }
+}
